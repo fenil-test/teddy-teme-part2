@@ -128,10 +128,7 @@
     border-radius: 10px;
 }
 
-.my_filter_tabs__div .collection__title.title-wrapper{ 
-    margin: 0 !important;
-    padding: 0rem 6rem 0rem 0rem !important;
-}
+.my_filter_tabs__div .collection__title.title-wrapper{  margin: 0 !important; }
 
 
 .my_filter_tabs__div{ 
@@ -139,6 +136,8 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.my_filter_tabs__div .page-width{ padding: 0rem;}
 
 
 .slider_tabss:nth-child(3){
@@ -681,21 +680,33 @@
     }
 }
 
-@media screen and (max-width: 1440px) {
-    .header .header__menu-item {
-        margin-left: 1rem; 
+@media only screen and (max-device-width: 1600px){
+    .my_featured__collection___tabs____btn {
+        padding: 6px 15px;
+        margin-right: 1rem;
     }
-    .my_header_icon {
-        margin-right: 1.4rem;
-    }
-    .my_page__width .grid__item {
-        padding: 1.5rem;
+    .my_product__icon:nth-child(1) { margin-right: 0rem; }
+}
+
+
+
+
+@media screen and (min-device-width: 1301px) and (max-device-width: 1440px){
+    .header .header__menu-item {  margin-left: 1rem;   }
+    .my_header_icon { margin-right: 1.4rem;  }
+    .my_page__width .grid__item { padding: 1.5rem; }
+    .my_product__icon { padding: 0.8rem; }
+    .my_featured__collection___tabs____list{ padding-left: 1.5rem;}
+    .my_featured__collection___tabs____btn {
+        padding: 5px 10px;
+        margin-right: 0.5rem;
     }
 }
 
 @media screen and (min-device-width: 1201px) and (max-device-width: 1300px) {
     h1, .h1, .h0 {font-size: 65px;}
     h4, .h4 { font-size: 22px; }
+    h3, .h3 { font-size: 28px; }
     h6, .h6 { font-size: 15px; }
     .medium_body {font-size: 19px; }
     .header .header__menu-item { margin-left: 0rem; }
@@ -733,13 +744,21 @@
     .home_page_filter1 { margin-right: 1rem; }
     .collection .quick-add .small_body { font-size: 13px; }
     .my_product__tag .my_tag__div span { padding: 0px 5px; }
+    .my_featured__collection___tabs____list{ padding: 0rem 0.5rem 0rem 2rem; }
+    .my_featured__collection___tabs____btn { 
+        font-size: 1.2rem;
+        margin-right: 0.5rem;
+        padding: 5px 10px;
+    }
+    .my_product__icon { padding: 0.5rem; }
+    
 }
 
 @media screen and (min-device-width: 768px) and (max-device-width: 1150px) {
     .header__menu-item { 
         padding: 6px 10px;
      }
-     .header .header__menu-item { margin-left: 0rem; }
+    .header .header__menu-item { margin-left: 0rem; }
     .my_header_icon { margin-right: 0rem; }
     .header__icon, .header__icon--cart .icon {
         height: 3.4rem; 
