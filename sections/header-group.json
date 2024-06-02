@@ -32,7 +32,7 @@
         "logo_position": "middle-left",
         "menu": "teddy-menu",
         "menu_type_desktop": "dropdown",
-        "sticky_header_type": "on-scroll-up",
+        "sticky_header_type": "none",
         "show_line_separator": true,
         "color_scheme": "scheme-6f796c01-66af-4e46-9058-9ae009d87f6d",
         "menu_color_scheme": "scheme-1",

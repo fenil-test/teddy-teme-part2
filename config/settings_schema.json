@@ -154,6 +154,70 @@
       },
       {
         "type": "header",
+        "content": "HEADING FONT SIZE TABLET"
+      },
+      {
+        "type": "range",
+        "id": "h1_tablet_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 50,
+        "unit": "px",
+        "label": "H1 tablet Font Size"
+      },
+      {
+        "type": "range",
+        "id": "h2_tablet_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 42,
+        "unit": "px",
+        "label": "H2 tablet Font Size"
+      },
+      {
+        "type": "range",
+        "id": "h3_tablet_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 36,
+        "unit": "px",
+        "label": "H3 tablet Font Size"
+      },
+      {
+        "type": "range",
+        "id": "h4_tablet_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 32,
+        "unit": "px",
+        "label": "H4 tablet Font Size"
+      },
+      {
+        "type": "range",
+        "id": "h5_tablet_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 18,
+        "unit": "px",
+        "label": "H5 tablet Font Size"
+      },
+      {
+        "type": "range",
+        "id": "h6_tablet_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 16,
+        "unit": "px",
+        "label": "H6 tablet Font Size"
+      },
+      {
+        "type": "header",
         "content": "HEADING FONT SIZE MOBILE"
       },
       {
@@ -249,6 +313,40 @@
         "default": 12,
         "unit": "px",
         "label": "Small Body Desktop Font Size"
+      },
+      {
+        "type": "header",
+        "content": "BODY FONT SIZE TEBLET"
+      },
+      {
+        "type": "range",
+        "id": "body_tablet_1_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 22,
+        "unit": "px",
+        "label": "Medium Body tablet Font Size"
+      },
+      {
+        "type": "range",
+        "id": "body_tablet_2_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 16,
+        "unit": "px",
+        "label": "Regular Body tablet Font Size"
+      },
+      {
+        "type": "range",
+        "id": "body_tablet_3_size",
+        "min": 1,
+        "max": 100,
+        "step": 1,
+        "default": 12,
+        "unit": "px",
+        "label": "Small Body tablet Font Size"
       },
       {
         "type": "header",

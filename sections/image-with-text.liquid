@@ -50,26 +50,30 @@
           > 
             
             {%- if section.settings.product != blank -%}
-              <h3 class="my_image__product__title">{{ section.settings.product.title }}</h3>
-              <p class="medium_body my_image__product__vendor"> {{ section.settings.product.vendor}}</p>
+              <div class="my_image__product__title__text">
+                  <h3 class="my_image__product__title">{{ section.settings.product.title }}</h3>
+                  <p class="medium_body my_image__product__vendor"> {{ section.settings.product.vendor}}</p>
+              </div>
+              <div class="my_image__product__title__img">
               {%- if section.settings.image_behavior == 'ambient' or section.settings.image_behavior == 'zoom-in' -%}
                 {%- assign widths = '198, 432, 642, 900, 1284, 1800' -%}
                 {%- capture sizes -%}
-              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
-              (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
-            {%- endcapture -%}
+                  (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 1.6667 }}px,
+                  (min-width: 750px) calc((100vw - 130px) / 1.667), calc((100vw - 50px) / 1.667)
+                {%- endcapture -%}
               {%- else -%}
                 {%- assign widths = '165, 360, 535, 750, 1070, 1500' -%}
                 {%- capture sizes -%}
-              (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
-              (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
-            {%- endcapture -%}
+                (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                {%- endcapture -%}
               {%- endif -%}
               {{
                 section.settings.product
                 | image_url: width: 1500
                 | image_tag: sizes: sizes, widths: widths, fetchpriority: fetch_priority
               }}
+              </div>
             {%- else -%}
               {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
             {%- endif -%}
